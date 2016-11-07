@@ -7,7 +7,7 @@
 	<body>
 
           <video id="scare">
-              <source src="video-coverted_mp4.mp4" type="video/mp4" >
+              <source src="video-coverted_mp4.mp4" type="video/mp4" style="display: none;" >
           </video>
 
 
@@ -19,6 +19,21 @@
           start : 'stop', 
           end : 'stop'
         });
+
+		 function Play()
+		 {
+		 	$('#scare').get(0).play();
+		 }
+
+		 function Hide()
+		 {
+		 	$('.seeThru-display').fadeOut();
+		 }
+
+		 function Show()
+		 {
+		 	$('.seeThru-display').fadeIn();
+		 }
 
 		</script>
 
